@@ -1,2 +1,6 @@
 .htaccess
 wp-config.php
+.idea/ezohiko.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml

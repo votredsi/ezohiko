@@ -250,7 +250,7 @@ wp.textWidgets = ( function( $ ) {
 					// If somebody has removed all plugins, they must have a good reason.
 					// Keep it that way.
 					if ( ! init.plugins ) {
-						return;
+
 					} else if ( ! /\bwpview\b/.test( init.plugins ) ) {
 						init.plugins += ',wpview';
 					}

@@ -7,15 +7,26 @@
 {% endblock %}
 
 	<body class="{{body_class}}" data-template="base.twig">
-		<header class="header" >
+		<header class="jaune" >
 			{% block header %}
-				<div class="wrapper">
-					<h1 class="hdr-logo" role="banner">
-						<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
-					</h1>
-					<nav id="nav-main" class="nav-main" role="navigation">
-						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav><!-- #nav -->
+				<div class="container">
+					<div class="row text-right">
+						<div class="col align-self-end contact">
+							<h3> <a href="/contact"> <span>Contactez-nous</span> </a></h3>
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col">
+                            <A HREF="/"><img class="mx-auto d-block" src="/img/ezohiko-logo-baseline.png" srcset="/img/logo-anime.svg" alt="logo Ezohiko animé" width="300px"></A>
+						</div>
+					</div>
+					<div class="row titre">
+						<div class="col ">
+							<h1>Avec des <strong>solutions numériques</strong>  à 360°<br>
+								et une méthologie <strong>sur-mesure</strong>
+							</h1>
+						</div>
+					</div>
 				</div>
 			{% endblock %}
 		</header>
