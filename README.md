@@ -1,0 +1,2 @@
+# ezohiko
+Theme site ezohiko
