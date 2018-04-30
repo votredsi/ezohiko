@@ -7,9 +7,10 @@
 {% endblock %}
 
 	<body class="{{body_class}}" data-template="base.twig">
+    <div class="fond-header">
+    </div>
 		<header class="jaune" >
 			{% block header %}
-				<div class="container">
 					<div class="row text-right">
 						<div class="col align-self-end contact">
 							<h3> <a href="/contact"> <span>Contactez-nous</span> </a></h3>
@@ -17,7 +18,11 @@
 					</div>
 					<div class="row ">
 						<div class="col">
-                            <A HREF="/"><img class="mx-auto d-block" src="/img/ezohiko-logo-baseline.png" srcset="/img/logo-anime.svg" alt="logo Ezohiko animé" width="300px"></A>
+                            <center>
+                            <A HREF="/">
+                                <img class="mx-auto d-block logo-ezohiko-header" src="/img/ezohiko-logo-baseline.png" srcset="/img/logo-anime.svg" alt="logo Ezohiko animé">
+                            </A>
+                            </center>
 						</div>
 					</div>
 					<div class="row titre">
@@ -27,12 +32,11 @@
 							</h1>
 						</div>
 					</div>
-				</div>
+
 			{% endblock %}
 		</header>
 
 		<section id="content" role="main" class="content-wrapper">
-			{% if title %}<h1>{{title}}</h1>{% endif %}
 			<div class="wrapper {{sidebar_class}}">
 				{% block content %}
 					Sorry, no content

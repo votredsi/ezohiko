@@ -9,6 +9,13 @@ body {
     background-color: #fbfbfb;
 }
 
+.container {
+
+    max-width: 1144px;
+    margin: auto;
+
+}
+
 .prochainement {
     margin-top: 1.5em;
 }
@@ -19,9 +26,13 @@ body {
 
 
 .contact {
-    margin-top: 20px;
+    text-align: right;
 }
 
+.logo-ezohiko-header  {
+    width: 100%;
+    max-width: 300px;
+}
 .contact a {
     color: #000;
     text-decoration: none;
@@ -29,13 +40,13 @@ body {
 
 
 h1	{
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: -0.05em;
 }
 
 h1 strong {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
 
 }
@@ -92,19 +103,17 @@ h3 a strong{
     font-weight: bold;
 }
 
+p {
+
+    text-align: justify;
+
+}
+
 .titre {
     margin: 30px 0 15px 0;
 }
 
-.jaune{
-    background-color: #ffcc33;
-    background-image: -webkit-linear-gradient(97deg, #fbfbfb 30%, #ffcc33 30%);
-    background-image:-moz-linear-gradient(97deg, #fbfbfb 30%, #ffcc33 30%);
-    /*background-image:-o-linear-gradient(97deg, #fbfbfb 30%, #ffcc33 30%);*/
-    /* background-image:linear-gradient(97deg, #fbfbfb 30%, #ffcc33 30%);
-     */
-
-    min-height: 500px;
+.jaune {
 }
 
 .propulsez {
@@ -181,8 +190,7 @@ footer a:hover {
 }
 
 .PiedPage {
-    margin-top: 230PX;
-
+    padding-top: 200px;
 }
 
 .jaunePied {
@@ -190,17 +198,31 @@ footer a:hover {
     background-color: #ffcc33;
     background-image: -webkit-linear-gradient( 99deg, #ffcc33 50%, #fbfbfb 50%);
     background-image:-moz-linear-gradient(99deg, #ffcc33 50%, #fbfbfb 50%);
-    /*background-image:-o-linear-gradient(99deg, #fbfbfb 30%, #ffcc33 30%);*/
-    /*background-image:linear-gradient(99deg, #fbfbfb 30%, #ffcc33 30%);*/
     min-height: 250px;
 }
 
-.row {
-    display: flex;
-    align-items: center;
+.fond-header {
+    background-color: #ffcc33;
+    background-image: -webkit-linear-gradient(97deg, #fbfbfb 40%, #ffcc33 40%);
+    display: block;
+    z-index: -100;
+    position: absolute;
+    min-height: 450px;
     width: 100%;
 }
 
+.row {
+    display: block;
+    align-items: center;
+    width: 100%;
+    max-width: 1144px;
+    margin: auto;
+}
+
+.wrapper {
+    max-width: 1144px;
+    margin: auto;
+}
 .col {
     width: 100%;
 }
@@ -709,47 +731,6 @@ footer a:hover {
 }
 
 /* Media Queries */
-@media screen and (max-width: 910px){
-    .mi-slider nav {
-        max-width: 90%;
-    }
-    .mi-slider nav a {
-        font-size: 12px;
-        padding: 40px 10px 30px 14px;
-    }
-}
-
-@media screen and (max-width: 740px){
-    .mi-slider {
-        height: 300px;
-    }
-    .mi-slider nav {
-        top: 220px;
-        max-width: 720px;
-    }
-
-    .mi-slider ul {
-        bottom: 3em;
-    }
-
-    .propulsez {
-        margin-top: -6em;
-    }
-
-    h1  {
-        font-size: 1.7em;
-        text-transform: uppercase;
-        letter-spacing: -0.05em;
-    }
-
-    h1 strong {
-        font-size: 1.2em;
-        font-weight: bold;
-
-    }
-
-}
-
 @media screen and (max-width: 490px){
     .mi-slider {
         text-align: center;
@@ -776,45 +757,10 @@ footer a:hover {
         display: none;
     }
 
-    .propulsez {
-        margin-top: -150px;
+    .fond-header {
+        background-image: -webkit-linear-gradient(97deg, #fbfbfb 30%, #ffcc33 30%);
+        min-height: 550px;
     }
-
-}
-
-@media (max-width: 576px) {
-
-    h1  {
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: -0.05em;
-    }
-
-    h1 strong {
-        font-size: 26px;
-        font-weight: bold;
-
-    }
-
-    .propulsez {
-        margin-top: -170px;
-    }
-
-    blockquote {
-        border-left: 5px solid #00baee;
-    }
-
-    blockquote p {
-        text-transform: uppercase;
-        padding-left: 10PX;
-        font-size: 0.9rem;
-
-
-    }
-    .iceberg {
-        background-image: none;
-    }
-
 }
 
 /*Page audit*/
