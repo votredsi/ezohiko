@@ -4,6 +4,10 @@
  * Author: Upstatement and YOU!
 */
 
+body.home.page-template-default.page.page-id-4.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fbfbfb;
